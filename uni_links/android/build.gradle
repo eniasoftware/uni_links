@@ -22,12 +22,16 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-namespace 'name.avioli.unilinks'
+    namespace 'name.avioli.unilinks'
+      compileSdkVersion 34
+
     defaultConfig {
-        minSdkVersion 16
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        minSdkVersion 21
+        targetSdkVersion 34
+         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+   
     lintOptions {
         disable 'InvalidPackage'
     }
